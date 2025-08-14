@@ -1,0 +1,5 @@
+langchain>=0.1.0
+fuzzywuzzy>=0.18.0
+pandas>=2.0.0
+openai>=1.0.0
+python-levenshtein>=0.12.2

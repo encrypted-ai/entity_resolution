@@ -1,0 +1,60 @@
+# MANIFEST.in for entity-resolution package
+# Specifies additional files to include in the distribution
+
+# Include documentation files
+include README.md
+include LICENSE
+include CHANGELOG.md
+include TEST_SUMMARY.md
+
+# Include requirements files
+include requirements.txt
+include requirements-dev.txt
+
+# Include configuration files
+include setup.cfg
+include pyproject.toml
+include tox.ini
+include .gitignore
+
+# Include source documentation
+recursive-include src/entity_resolution *.md
+recursive-include src/entity_resolution *.txt
+recursive-include src/entity_resolution *.rst
+
+# Include test files
+recursive-include tests *.py
+recursive-include tests *.md
+recursive-include tests *.txt
+
+# Include example files and notebooks
+recursive-include examples *.py
+recursive-include examples *.ipynb
+recursive-include examples *.md
+
+# Include documentation source
+recursive-include docs *.py
+recursive-include docs *.rst
+recursive-include docs *.md
+recursive-include docs *.txt
+recursive-include docs Makefile
+
+# Exclude compiled files and caches
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude *.pyd
+global-exclude __pycache__
+global-exclude .DS_Store
+global-exclude *.so
+global-exclude .coverage
+global-exclude .pytest_cache
+
+# Exclude development and build artifacts
+global-exclude .git*
+global-exclude .tox
+global-exclude build
+global-exclude dist
+global-exclude *.egg-info
+global-exclude .venv
+global-exclude venv
+global-exclude env
